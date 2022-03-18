@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Employee Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Student Registeration Form</h1>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Full Name</label><label class="validation-error hide" id="fullNameValidationError">
+                            This field is required.
+                        </label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Roll No</label>
+                        <input type="number" name="rollNo" id="rollNo">
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div>
+                        <label>Age</label>
+                        <input type="number" name="age" id="age">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="studentList">
+                    <thead>
+                        <tr>
+                            <th>Roll No</th>
+                            <th>Full Name</th>
+                            <th>Email</th>
+                            <th>Age</th>
+                            <th></th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+
+                </table>
+
+            </td>
+
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
